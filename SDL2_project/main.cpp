@@ -103,9 +103,9 @@ void printAnswer(int guess, int answer) {
     if (guess == answer) {
         cout << "You are correct!";
     } else if (guess < answer) {
-        cout << "Your number is smaller";
+        cout << "Your number is too small!";
     } else {
-        cout << "Your number is bigger";
+        cout << "Your number is too big!";
     }
     cout << endl;
 }
@@ -114,6 +114,8 @@ int getSolution(int guess) {
     string answer;
     cout << "Is " << guess << " your number? (yes: y; bigger: b; smaller: s): ";
     cin >> answer;
+    
+    // if the guess is correct, then return 0, if the guess is smaller than the answer, then return 1, and if its bigger, return 2
     return answer == "y" ? 0 : (answer == "b" ? 1 : 2);
 }
 
