@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		4F05606D27DF9BB5004A495C /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4F05606C27DF9BB5004A495C /* main.cpp */; };
+		4F05607527DF9C5F004A495C /* SDL2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F05607427DF9C5F004A495C /* SDL2.framework */; };
+		4F05607927DFA01A004A495C /* SDL2_image.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F05607827DFA01A004A495C /* SDL2_image.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +27,9 @@
 /* Begin PBXFileReference section */
 		4F05606927DF9BB5004A495C /* SDL2_project */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = SDL2_project; sourceTree = BUILT_PRODUCTS_DIR; };
 		4F05606C27DF9BB5004A495C /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		4F05607427DF9C5F004A495C /* SDL2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SDL2.framework; path = ../../../../../../../../Library/Frameworks/SDL2.framework; sourceTree = "<group>"; };
+		4F05607627DF9F49004A495C /* libSDL2_image-2.0.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libSDL2_image-2.0.0.dylib"; path = "../../../../../../../../usr/local/Cellar/sdl2_image/2.0.5/lib/libSDL2_image-2.0.0.dylib"; sourceTree = "<group>"; };
+		4F05607827DFA01A004A495C /* SDL2_image.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SDL2_image.framework; path = ../../../../../../../../Library/Frameworks/SDL2_image.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -32,6 +37,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4F05607927DFA01A004A495C /* SDL2_image.framework in Frameworks */,
+				4F05607527DF9C5F004A495C /* SDL2.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -43,6 +50,7 @@
 			children = (
 				4F05606B27DF9BB5004A495C /* SDL2_project */,
 				4F05606A27DF9BB5004A495C /* Products */,
+				4F05607327DF9C5F004A495C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -60,6 +68,16 @@
 				4F05606C27DF9BB5004A495C /* main.cpp */,
 			);
 			path = SDL2_project;
+			sourceTree = "<group>";
+		};
+		4F05607327DF9C5F004A495C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4F05607827DFA01A004A495C /* SDL2_image.framework */,
+				4F05607627DF9F49004A495C /* libSDL2_image-2.0.0.dylib */,
+				4F05607427DF9C5F004A495C /* SDL2.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -243,6 +261,14 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5TJXT4H7U8;
 				ENABLE_HARDENED_RUNTIME = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(LOCAL_LIBRARY_DIR)/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/usr/local/Cellar/sdl2_image/2.0.5/lib,
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -253,6 +279,14 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5TJXT4H7U8;
 				ENABLE_HARDENED_RUNTIME = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(LOCAL_LIBRARY_DIR)/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/usr/local/Cellar/sdl2_image/2.0.5/lib,
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
