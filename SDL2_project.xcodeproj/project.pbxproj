@@ -10,6 +10,8 @@
 		4F05606D27DF9BB5004A495C /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4F05606C27DF9BB5004A495C /* main.cpp */; };
 		4F05607527DF9C5F004A495C /* SDL2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F05607427DF9C5F004A495C /* SDL2.framework */; };
 		4F05607927DFA01A004A495C /* SDL2_image.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F05607827DFA01A004A495C /* SDL2_image.framework */; };
+		4F485B5F27E13C5B0062AC84 /* game_functions.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4F485B5E27E13C5B0062AC84 /* game_functions.cpp */; };
+		4F485B6227E13CD50062AC84 /* SDL_Utils.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4F485B6027E13CD40062AC84 /* SDL_Utils.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -30,6 +32,10 @@
 		4F05607427DF9C5F004A495C /* SDL2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SDL2.framework; path = ../../../../../../../../Library/Frameworks/SDL2.framework; sourceTree = "<group>"; };
 		4F05607627DF9F49004A495C /* libSDL2_image-2.0.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libSDL2_image-2.0.0.dylib"; path = "../../../../../../../../usr/local/Cellar/sdl2_image/2.0.5/lib/libSDL2_image-2.0.0.dylib"; sourceTree = "<group>"; };
 		4F05607827DFA01A004A495C /* SDL2_image.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SDL2_image.framework; path = ../../../../../../../../Library/Frameworks/SDL2_image.framework; sourceTree = "<group>"; };
+		4F485B5D27E13C1D0062AC84 /* game_functions.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = game_functions.h; sourceTree = "<group>"; };
+		4F485B5E27E13C5B0062AC84 /* game_functions.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = game_functions.cpp; sourceTree = "<group>"; };
+		4F485B6027E13CD40062AC84 /* SDL_Utils.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = SDL_Utils.cpp; sourceTree = "<group>"; };
+		4F485B6127E13CD50062AC84 /* SDL_Utils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SDL_Utils.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,7 +71,11 @@
 		4F05606B27DF9BB5004A495C /* SDL2_project */ = {
 			isa = PBXGroup;
 			children = (
+				4F485B6027E13CD40062AC84 /* SDL_Utils.cpp */,
+				4F485B6127E13CD50062AC84 /* SDL_Utils.h */,
 				4F05606C27DF9BB5004A495C /* main.cpp */,
+				4F485B5D27E13C1D0062AC84 /* game_functions.h */,
+				4F485B5E27E13C5B0062AC84 /* game_functions.cpp */,
 			);
 			path = SDL2_project;
 			sourceTree = "<group>";
@@ -138,6 +148,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				4F05606D27DF9BB5004A495C /* main.cpp in Sources */,
+				4F485B5F27E13C5B0062AC84 /* game_functions.cpp in Sources */,
+				4F485B6227E13CD50062AC84 /* SDL_Utils.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
