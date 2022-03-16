@@ -172,7 +172,7 @@ int playerGuess() {
             const string pressedKey = interpretKey(&event.key);
             
             // check if the key pressed is a number
-            if (find(begin(nums), end(nums), pressedKey) != end(nums)) {
+            if ((find(begin(nums), end(nums), pressedKey) != end(nums)) && currentGuess.length() < 3) {
                 rerender();
                 currentGuess += pressedKey;
                 for (int i = 0; i < currentGuess.length(); i++) {

@@ -21,6 +21,8 @@ void unloadAllTextures();
 
 void rerender();
 
+
+// render "Guess a number" to inform the player to enter a guess
 void renderPrompt();
 
 // render the number that the player guesses
