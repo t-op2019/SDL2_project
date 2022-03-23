@@ -12,6 +12,7 @@
 		4F05607927DFA01A004A495C /* SDL2_image.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F05607827DFA01A004A495C /* SDL2_image.framework */; };
 		4F485B5F27E13C5B0062AC84 /* game_functions.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4F485B5E27E13C5B0062AC84 /* game_functions.cpp */; };
 		4F485B6227E13CD50062AC84 /* SDL_Utils.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4F485B6027E13CD40062AC84 /* SDL_Utils.cpp */; };
+		4FDB999327EB25E50098AE2D /* background_functions.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4FDB999227EB25E50098AE2D /* background_functions.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -36,6 +37,8 @@
 		4F485B5E27E13C5B0062AC84 /* game_functions.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = game_functions.cpp; sourceTree = "<group>"; };
 		4F485B6027E13CD40062AC84 /* SDL_Utils.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = SDL_Utils.cpp; sourceTree = "<group>"; };
 		4F485B6127E13CD50062AC84 /* SDL_Utils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SDL_Utils.h; sourceTree = "<group>"; };
+		4FDB999127EB225C0098AE2D /* background_functions.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = background_functions.h; sourceTree = "<group>"; };
+		4FDB999227EB25E50098AE2D /* background_functions.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = background_functions.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,6 +79,8 @@
 				4F05606C27DF9BB5004A495C /* main.cpp */,
 				4F485B5D27E13C1D0062AC84 /* game_functions.h */,
 				4F485B5E27E13C5B0062AC84 /* game_functions.cpp */,
+				4FDB999127EB225C0098AE2D /* background_functions.h */,
+				4FDB999227EB25E50098AE2D /* background_functions.cpp */,
 			);
 			path = SDL2_project;
 			sourceTree = "<group>";
@@ -148,6 +153,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4F05606D27DF9BB5004A495C /* main.cpp in Sources */,
+				4FDB999327EB25E50098AE2D /* background_functions.cpp in Sources */,
 				4F485B5F27E13C5B0062AC84 /* game_functions.cpp in Sources */,
 				4F485B6227E13CD50062AC84 /* SDL_Utils.cpp in Sources */,
 			);

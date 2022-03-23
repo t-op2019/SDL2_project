@@ -2,6 +2,7 @@
 #include <string>
 #include "SDL_Utils.h"
 #include "game_functions.h"
+#include "background_functions.h"
 
 using namespace std;
 
@@ -13,11 +14,15 @@ int main() {
     bool isRunning = true;
     
     // preload all textures of the game
-    loadAllTextures();
-    
-    bool humanVsComp = true;
-    int secretNumber = generateNumber();
-    int computerGuess = generateNumber();
+    loadAllTextures("", "");
+    int secretNumber;
+    int computerGuess;
+    bool humanVsComp = humanVsComputer();
+    if (humanVsComp) {
+        secretNumber = generateNumber();
+    } else {
+        computerGuess = generateNumber();
+    }
     
     // run the game program
     while (isRunning) {

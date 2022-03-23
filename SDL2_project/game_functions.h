@@ -15,25 +15,6 @@
 
 using namespace std;
 
-void loadAllTextures();
-
-void unloadAllTextures();
-
-void rerender();
-
-
-// render "Guess a number" to inform the player to enter a guess
-void renderPrompt();
-
-// render the number that the player guesses
-void renderGuess(SDL_Texture* texture, int posX, int posY);
-
-void renderLoading();
-
-void renderResponse(SDL_Texture* texture, int y, int textureWidth);
-
-void renderReplay();
-
 int binarySearch(int left, int right);
 
 bool humanVsComputer();
